@@ -94,4 +94,11 @@ export const therapistType = defineType({
       description: 'Order in which to display on team page',
     }),
   ],
+  preview: {
+    select: {
+      title: 'name',
+      subtitle: 'title',
+      media: 'photo',
+    },
+  },
 })

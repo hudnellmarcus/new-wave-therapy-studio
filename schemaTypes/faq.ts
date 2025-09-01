@@ -36,6 +36,11 @@ export const faq = defineType({
       type: 'boolean',
       initialValue: true,
     }),
+    defineField({  
+    name: 'color',
+    title: 'Color',
+    type: 'string'
+    })
   ],
   preview: {
     select: {
