@@ -30,12 +30,22 @@ export const therapistType = defineType({
       description: 'e.g. LCSW, LMFT, Ph.D.',
     }),
     defineField({
-      name: 'photo',
-      title: 'Profile Photo',
+      name: 'previewPhoto',
+      title: 'Preview Photo',
       type: 'image',
       options: {
         hotspot: true,
       },
+      description: 'Smaller image used for team grid/preview displays',
+    }),
+    defineField({
+      name: 'primaryPhoto',
+      title: 'Primary Photo',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+      description: 'Main photo used on individual therapist pages',
     }),
     defineField({
       name: 'bio',
@@ -98,7 +108,7 @@ export const therapistType = defineType({
     select: {
       title: 'name',
       subtitle: 'title',
-      media: 'photo',
+      media: 'previewPhoto',
     },
   },
 })
