@@ -52,6 +52,13 @@ export const therapistType = defineType({
       title: 'Biography',
       type: 'array',
       of: [{type: 'block'}],
+      description: 'Full biography for individual therapist page',
+    }),
+    defineField({
+      name: 'previewBio',
+      title: 'Preview Biography',
+      type: 'text',
+      description: 'Shorter bio shown in team grid preview popup',
     }),
     defineField({
       name: 'specializations',
@@ -83,6 +90,13 @@ export const therapistType = defineType({
       type: 'array',
       of: [{type: 'string'}],
       description: 'Educational background and training',
+    }),
+    defineField({
+      name: 'identityExperience',
+      title: 'Identity Experience',
+      type: 'array',
+      of: [{type: 'string'}],
+      description: 'Identity markers and lived experiences (e.g., race, sexuality, culture, immigration experience)',
     }),
     defineField({
       name: 'isActive',
