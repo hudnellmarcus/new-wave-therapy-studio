@@ -27,6 +27,30 @@ export const siteSettings = defineType({
       validation: (rule) => rule.required().email(),
     }),
     defineField({
+      name: 'addressLine1',
+      title: 'Address Line 1',
+      type: 'string',
+      description: 'Street address (e.g., 1225 Cypress Ave Suite 3 #V472)',
+    }),
+    defineField({
+      name: 'addressLine2',
+      title: 'Address Line 2',
+      type: 'string',
+      description: 'City, State, ZIP (e.g., Los Angeles CA 90065)',
+    }),
+    defineField({
+      name: 'supervisorName',
+      title: 'Supervisor Name',
+      type: 'string',
+      description: 'Name and credentials (e.g., Hallie Gnatovich, LMFT #52775)',
+    }),
+    defineField({
+      name: 'supervisorUrl',
+      title: 'Supervisor Website URL',
+      type: 'url',
+      description: 'Link to supervisor website',
+    }),
+    defineField({
       name: 'teamDescription',
       title: 'Team Description',
       type: 'text',
