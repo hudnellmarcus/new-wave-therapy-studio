@@ -40,16 +40,22 @@ export const aboutPage = defineType({
       type: 'text',
     }),
     defineField({
+      name: 'headlineText',
+      title: 'Headline Text',
+      type: 'string',
+      description: 'Large headline on the left side',
+    }),
+    defineField({
+      name: 'paragraphText',
+      title: 'Paragraph Text',
+      type: 'text',
+      description: 'Paragraph below the headline on the left side',
+    }),
+    defineField({
       name: 'ourApproachQuote',
       title: 'Our Approach Quote',
       type: 'text',
-      description: 'Quote displayed in the "Our Approach" section',
-    }),
-    defineField({
-      name: 'ourApproachText',
-      title: 'Our Approach Text',
-      type: 'text',
-      description: 'Text below the quote in the "Our Approach" section',
+      description: 'Quote displayed in the "Our Approach" box on the right',
     }),
     defineField({
       name: 'processSteps',
