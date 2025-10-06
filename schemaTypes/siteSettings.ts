@@ -13,6 +13,20 @@ export const siteSettings = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
+      name: 'phone',
+      title: 'Phone Number',
+      type: 'string',
+      description: 'Main contact phone number',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'email',
+      title: 'Email Address',
+      type: 'string',
+      description: 'Main contact email address',
+      validation: (rule) => rule.required().email(),
+    }),
+    defineField({
       name: 'teamDescription',
       title: 'Team Description',
       type: 'text',
